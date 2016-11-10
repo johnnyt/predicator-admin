@@ -1,6 +1,12 @@
 # Common configuration.
 AllCops:
   TargetRubyVersion: 2.0
+  Exclude:
+    - 'test/dummy/**/*'
+
+Style/FileName:
+  Exclude:
+    - 'lib/predicator-admin.rb'
 
 Style/Documentation:
   # Setting to true requires that all classes have a comment above the
